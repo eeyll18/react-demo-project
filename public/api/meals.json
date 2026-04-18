@@ -1,0 +1,144 @@
+{
+  "meals": [
+    {
+      "id": "m1",
+      "name": "Margherita Pizza",
+      "description": "Classic pizza with tomato sauce, mozzarella, and basil",
+      "price": 120,
+      "category": "Pizza"
+    },
+    {
+      "id": "m2",
+      "name": "Pepperoni Pizza",
+      "description": "Pizza topped with pepperoni and mozzarella cheese",
+      "price": 140,
+      "category": "Pizza"
+    },
+    {
+      "id": "m3",
+      "name": "Cheeseburger",
+      "description": "Grilled beef patty with cheese, lettuce, and tomato",
+      "price": 110,
+      "category": "Burger"
+    },
+    {
+      "id": "m4",
+      "name": "Chicken Burger",
+      "description": "Crispy chicken fillet with lettuce and mayo",
+      "price": 100,
+      "category": "Burger"
+    },
+    {
+      "id": "m5",
+      "name": "Spaghetti Bolognese",
+      "description": "Pasta with rich meat sauce",
+      "price": 130,
+      "category": "Pasta"
+    },
+    {
+      "id": "m6",
+      "name": "Fettuccine Alfredo",
+      "description": "Creamy pasta with parmesan sauce",
+      "price": 135,
+      "category": "Pasta"
+    },
+    {
+      "id": "m7",
+      "name": "Caesar Salad",
+      "description": "Fresh romaine lettuce with Caesar dressing",
+      "price": 80,
+      "category": "Salad"
+    },
+    {
+      "id": "m8",
+      "name": "Greek Salad",
+      "description": "Salad with feta cheese, olives, and vegetables",
+      "price": 85,
+      "category": "Salad"
+    },
+    {
+      "id": "m9",
+      "name": "Grilled Chicken",
+      "description": "Juicy grilled chicken served with sides",
+      "price": 150,
+      "category": "Main Course"
+    },
+    {
+      "id": "m10",
+      "name": "Beef Steak",
+      "description": "Grilled steak cooked to your preference",
+      "price": 200,
+      "category": "Main Course"
+    },
+    {
+      "id": "m11",
+      "name": "French Fries",
+      "description": "Crispy golden potato fries",
+      "price": 60,
+      "category": "Side"
+    },
+    {
+      "id": "m12",
+      "name": "Onion Rings",
+      "description": "Deep fried onion rings",
+      "price": 65,
+      "category": "Side"
+    },
+    {
+      "id": "m13",
+      "name": "Chocolate Cake",
+      "description": "Rich and moist chocolate cake",
+      "price": 70,
+      "category": "Dessert"
+    },
+    {
+      "id": "m14",
+      "name": "Cheesecake",
+      "description": "Creamy cheesecake with biscuit base",
+      "price": 75,
+      "category": "Dessert"
+    },
+    {
+      "id": "m15",
+      "name": "Ice Cream",
+      "description": "Vanilla ice cream scoop",
+      "price": 50,
+      "category": "Dessert"
+    },
+    {
+      "id": "m16",
+      "name": "Coca Cola",
+      "description": "Chilled soft drink",
+      "price": 40,
+      "category": "Beverage"
+    },
+    {
+      "id": "m17",
+      "name": "Orange Juice",
+      "description": "Freshly squeezed orange juice",
+      "price": 45,
+      "category": "Beverage"
+    },
+    {
+      "id": "m18",
+      "name": "Lemonade",
+      "description": "Refreshing homemade lemonade",
+      "price": 42,
+      "category": "Beverage"
+    },
+    {
+      "id": "m19",
+      "name": "Club Sandwich",
+      "description": "Triple layered sandwich with chicken and bacon",
+      "price": 95,
+      "category": "Sandwich"
+    },
+    {
+      "id": "m20",
+      "name": "Tuna Sandwich",
+      "description": "Sandwich with tuna salad filling",
+      "price": 90,
+      "category": "Sandwich"
+    }
+  ]
+}
