@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import MenuPage from "./pages/MenuPage";
 
 function App() {
-
   return (
-    <>
-      eda
-    </>
-  )
+    <main className="app-shell">
+      <MenuPage />
+    </main>
+  );
 }
 
-export default App
+export default App;
