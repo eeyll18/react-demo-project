@@ -19,7 +19,7 @@ const CartItem = memo(function CartItem({
 
       <div className={styles.actions}>
         <div className={styles.counter}>
-          <button type="button" onClick={() => onDecrease(item.id)}>
+          <button type="button" onClick={() => onDecrease(item)}>
             -
           </button>
           <span>{item.quantity}</span>
@@ -30,7 +30,7 @@ const CartItem = memo(function CartItem({
         <button
           type="button"
           className={`${styles.removeButton} button button--ghost`}
-          onClick={() => onRemove(item.id)}
+          onClick={() => onRemove(item)}
         >
           Kaldır
         </button>

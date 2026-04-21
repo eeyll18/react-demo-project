@@ -1,13 +1,22 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback } from "react";
 import styles from "./MenuPage.module.css";
 import PageLoader from "../components/PageLoader";
 import ErrorState from "../components/ErrorState";
 import MealCard from "../components/MealCard";
 import { useMeals } from "../hooks/useMeals";
+import { useCart } from "../hooks/useCart";
 
 export default function MenuPage() {
   const { meals, loading, error, refetch } = useMeals();
+  const { addItem } = useCart();
   const [searchTerm, setSearchTerm] = useState("");
+
+  const handleAddToCart = useCallback(
+    (meal) => {
+      addItem(meal);
+    },
+    [addItem],
+  );
 
   const filteredMeals = useMemo(() => {
     const normalizedSearch = searchTerm.trim().toLocaleLowerCase();
@@ -25,10 +34,6 @@ export default function MenuPage() {
   const categoryCount = useMemo(() => {
     return new Set(meals.map((meal) => meal.category)).size;
   }, [meals]);
-
-  function handleAddToCar(meal) {
-    console.log("Sepete eklendi!", meal);
-  }
 
   return (
     <div className="page-section">
@@ -77,7 +82,7 @@ export default function MenuPage() {
         filteredMeals.length > 0 ? (
           <section className={styles.grid}>
             {filteredMeals.map((meal) => (
-              <MealCard key={meal.id} meal={meal} onAdd={handleAddToCar} />
+              <MealCard key={meal.id} meal={meal} onAdd={handleAddToCart} />
             ))}
           </section>
         ) : (
