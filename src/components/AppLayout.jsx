@@ -27,6 +27,9 @@ function AppLayout() {
             Sepet
             <span className={styles.badge}>{totalItems}</span>
           </NavLink>
+          <NavLink to="/history" className={getLinkClassName}>
+            Geçmiş
+          </NavLink>
         </nav>
       </header>
 

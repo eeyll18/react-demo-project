@@ -1,17 +1,25 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import MenuPage from "./pages/MenuPage";
 import AppLayout from "./components/AppLayout";
-import CartPage from "./pages/CartPage";
+import { lazy, Suspense } from "react";
+import PageLoader from "./components/PageLoader";
+
+const MenuPage = lazy(() => import("./pages/MenuPage"));
+const CartPage = lazy(() => import("./pages/CartPage"));
+const HistoryPage = lazy(() => import("./pages/CartPage"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 function App() {
   return (
-    <Routes>
-      <Route element={<AppLayout />}>
-        <Route index element={<MenuPage />} />
-        <Route path="/cart" element={<CartPage />} />
-      </Route>
-    </Routes>
+    <Suspense fallback={<PageLoader label="Sayfa Yükleniyor..." />}>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route index element={<MenuPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 
